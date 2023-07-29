@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C80882872A4E331700F8E6DF /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80882862A4E331700F8E6DF /* Table.swift */; };
+		C80882892A4E389E00F8E6DF /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80882882A4E389E00F8E6DF /* Hand.swift */; };
 		C8385DD929DA076A00E8F0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385DD829DA076A00E8F0CE /* AppDelegate.swift */; };
 		C8385DDB29DA076A00E8F0CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385DDA29DA076A00E8F0CE /* SceneDelegate.swift */; };
 		C8385DDD29DA076A00E8F0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385DDC29DA076A00E8F0CE /* ViewController.swift */; };
 		C8385DE029DA076A00E8F0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8385DDE29DA076A00E8F0CE /* Main.storyboard */; };
 		C8385DE229DA076B00E8F0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8385DE129DA076B00E8F0CE /* Assets.xcassets */; };
 		C8385DE529DA076B00E8F0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8385DE329DA076B00E8F0CE /* LaunchScreen.storyboard */; };
+		C87177D62A4AEE8A008E8225 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87177D52A4AEE8A008E8225 /* Helpers.swift */; };
+		C87177D82A4AEFD0008E8225 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87177D72A4AEFD0008E8225 /* Card.swift */; };
+		C87177DA2A4AF137008E8225 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87177D92A4AF137008E8225 /* Deck.swift */; };
+		C87177DC2A4AF35B008E8225 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87177DB2A4AF35B008E8225 /* Player.swift */; };
+		C8A978EB29E188ED00382E66 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A978EA29E188ED00382E66 /* Logic.swift */; };
+		C8F661852A5976550096D9F4 /* Evaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F661842A5976550096D9F4 /* Evaluator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C80882862A4E331700F8E6DF /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		C80882882A4E389E00F8E6DF /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 		C8385DD529DA076A00E8F0CE /* Poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8385DD829DA076A00E8F0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8385DDA29DA076A00E8F0CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +34,12 @@
 		C8385DE129DA076B00E8F0CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8385DE429DA076B00E8F0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8385DE629DA076B00E8F0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C87177D52A4AEE8A008E8225 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		C87177D72A4AEFD0008E8225 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C87177D92A4AF137008E8225 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		C87177DB2A4AF35B008E8225 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		C8A978EA29E188ED00382E66 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		C8F661842A5976550096D9F4 /* Evaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Evaluator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,47 @@
 		C8385DD729DA076A00E8F0CE /* Poker */ = {
 			isa = PBXGroup;
 			children = (
-				C8385DD829DA076A00E8F0CE /* AppDelegate.swift */,
-				C8385DDA29DA076A00E8F0CE /* SceneDelegate.swift */,
-				C8385DDC29DA076A00E8F0CE /* ViewController.swift */,
+				C87ACC0D2A5CAE7B00AA38C8 /* Service */,
+				C87177D42A4AEBF4008E8225 /* Logic */,
+				C87177D32A4AEBD7008E8225 /* Ui */,
 				C8385DDE29DA076A00E8F0CE /* Main.storyboard */,
 				C8385DE129DA076B00E8F0CE /* Assets.xcassets */,
 				C8385DE329DA076B00E8F0CE /* LaunchScreen.storyboard */,
 				C8385DE629DA076B00E8F0CE /* Info.plist */,
 			);
 			path = Poker;
+			sourceTree = "<group>";
+		};
+		C87177D32A4AEBD7008E8225 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				C8385DD829DA076A00E8F0CE /* AppDelegate.swift */,
+				C8385DDA29DA076A00E8F0CE /* SceneDelegate.swift */,
+				C8385DDC29DA076A00E8F0CE /* ViewController.swift */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		C87177D42A4AEBF4008E8225 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				C87177D52A4AEE8A008E8225 /* Helpers.swift */,
+				C87177D72A4AEFD0008E8225 /* Card.swift */,
+				C87177D92A4AF137008E8225 /* Deck.swift */,
+				C80882882A4E389E00F8E6DF /* Hand.swift */,
+				C80882862A4E331700F8E6DF /* Table.swift */,
+				C87177DB2A4AF35B008E8225 /* Player.swift */,
+				C8A978EA29E188ED00382E66 /* Logic.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		C87ACC0D2A5CAE7B00AA38C8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C8F661842A5976550096D9F4 /* Evaluator.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +186,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C87177DA2A4AF137008E8225 /* Deck.swift in Sources */,
+				C8A978EB29E188ED00382E66 /* Logic.swift in Sources */,
+				C87177D82A4AEFD0008E8225 /* Card.swift in Sources */,
 				C8385DDD29DA076A00E8F0CE /* ViewController.swift in Sources */,
+				C87177DC2A4AF35B008E8225 /* Player.swift in Sources */,
+				C80882872A4E331700F8E6DF /* Table.swift in Sources */,
+				C80882892A4E389E00F8E6DF /* Hand.swift in Sources */,
+				C8F661852A5976550096D9F4 /* Evaluator.swift in Sources */,
 				C8385DD929DA076A00E8F0CE /* AppDelegate.swift in Sources */,
+				C87177D62A4AEE8A008E8225 /* Helpers.swift in Sources */,
 				C8385DDB29DA076A00E8F0CE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +351,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +380,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
