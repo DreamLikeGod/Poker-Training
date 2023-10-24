@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		C80882872A4E331700F8E6DF /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80882862A4E331700F8E6DF /* Table.swift */; };
 		C80882892A4E389E00F8E6DF /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80882882A4E389E00F8E6DF /* Hand.swift */; };
+		C81030272AE511B200C4AE15 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81030262AE511B200C4AE15 /* SettingsViewController.swift */; };
+		C81030292AE511DE00C4AE15 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81030282AE511DE00C4AE15 /* RulesViewController.swift */; };
+		C810302B2AE511FF00C4AE15 /* TrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C810302A2AE511FF00C4AE15 /* TrainingViewController.swift */; };
+		C810302D2AE5121B00C4AE15 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C810302C2AE5121B00C4AE15 /* Settings.swift */; };
 		C8385DD929DA076A00E8F0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385DD829DA076A00E8F0CE /* AppDelegate.swift */; };
 		C8385DDB29DA076A00E8F0CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385DDA29DA076A00E8F0CE /* SceneDelegate.swift */; };
-		C8385DDD29DA076A00E8F0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385DDC29DA076A00E8F0CE /* ViewController.swift */; };
+		C8385DDD29DA076A00E8F0CE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8385DDC29DA076A00E8F0CE /* MenuViewController.swift */; };
 		C8385DE029DA076A00E8F0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8385DDE29DA076A00E8F0CE /* Main.storyboard */; };
 		C8385DE229DA076B00E8F0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8385DE129DA076B00E8F0CE /* Assets.xcassets */; };
 		C8385DE529DA076B00E8F0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8385DE329DA076B00E8F0CE /* LaunchScreen.storyboard */; };
@@ -26,10 +30,14 @@
 /* Begin PBXFileReference section */
 		C80882862A4E331700F8E6DF /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		C80882882A4E389E00F8E6DF /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		C81030262AE511B200C4AE15 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C81030282AE511DE00C4AE15 /* RulesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		C810302A2AE511FF00C4AE15 /* TrainingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingViewController.swift; sourceTree = "<group>"; };
+		C810302C2AE5121B00C4AE15 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C8385DD529DA076A00E8F0CE /* Poker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8385DD829DA076A00E8F0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8385DDA29DA076A00E8F0CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8385DDC29DA076A00E8F0CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8385DDC29DA076A00E8F0CE /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C8385DDF29DA076A00E8F0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8385DE129DA076B00E8F0CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8385DE429DA076B00E8F0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C81030252AE5117800C4AE15 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C8385DD829DA076A00E8F0CE /* AppDelegate.swift */,
+				C8385DDA29DA076A00E8F0CE /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 		C8385DCC29DA076A00E8F0CE = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +92,7 @@
 				C87ACC0D2A5CAE7B00AA38C8 /* Service */,
 				C87177D42A4AEBF4008E8225 /* Logic */,
 				C87177D32A4AEBD7008E8225 /* Ui */,
+				C81030252AE5117800C4AE15 /* Delegate */,
 				C8385DDE29DA076A00E8F0CE /* Main.storyboard */,
 				C8385DE129DA076B00E8F0CE /* Assets.xcassets */,
 				C8385DE329DA076B00E8F0CE /* LaunchScreen.storyboard */,
@@ -86,9 +104,10 @@
 		C87177D32A4AEBD7008E8225 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
-				C8385DD829DA076A00E8F0CE /* AppDelegate.swift */,
-				C8385DDA29DA076A00E8F0CE /* SceneDelegate.swift */,
-				C8385DDC29DA076A00E8F0CE /* ViewController.swift */,
+				C81030282AE511DE00C4AE15 /* RulesViewController.swift */,
+				C8385DDC29DA076A00E8F0CE /* MenuViewController.swift */,
+				C81030262AE511B200C4AE15 /* SettingsViewController.swift */,
+				C810302A2AE511FF00C4AE15 /* TrainingViewController.swift */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
@@ -111,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				C8F661842A5976550096D9F4 /* Evaluator.swift */,
+				C810302C2AE5121B00C4AE15 /* Settings.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -189,14 +209,18 @@
 				C87177DA2A4AF137008E8225 /* Deck.swift in Sources */,
 				C8A978EB29E188ED00382E66 /* Logic.swift in Sources */,
 				C87177D82A4AEFD0008E8225 /* Card.swift in Sources */,
-				C8385DDD29DA076A00E8F0CE /* ViewController.swift in Sources */,
+				C8385DDD29DA076A00E8F0CE /* MenuViewController.swift in Sources */,
 				C87177DC2A4AF35B008E8225 /* Player.swift in Sources */,
 				C80882872A4E331700F8E6DF /* Table.swift in Sources */,
 				C80882892A4E389E00F8E6DF /* Hand.swift in Sources */,
+				C81030292AE511DE00C4AE15 /* RulesViewController.swift in Sources */,
 				C8F661852A5976550096D9F4 /* Evaluator.swift in Sources */,
+				C810302D2AE5121B00C4AE15 /* Settings.swift in Sources */,
 				C8385DD929DA076A00E8F0CE /* AppDelegate.swift in Sources */,
+				C810302B2AE511FF00C4AE15 /* TrainingViewController.swift in Sources */,
 				C87177D62A4AEE8A008E8225 /* Helpers.swift in Sources */,
 				C8385DDB29DA076A00E8F0CE /* SceneDelegate.swift in Sources */,
+				C81030272AE511B200C4AE15 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,11 +370,13 @@
 				DEVELOPMENT_TEAM = 26KQZZMST2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Poker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brain Poker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,11 +401,13 @@
 				DEVELOPMENT_TEAM = 26KQZZMST2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Poker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Brain Poker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
